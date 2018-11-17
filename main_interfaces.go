@@ -1,9 +1,9 @@
 package main
 
 import "fmt"
-import "./is308interfaces"
-import "./course"
-import "./comparable"
+import "github.com/uiaworker/is308misc/is308interfaces"
+import "github.com/uiaworker/is308misc/course"
+import "github.com/uiaworker/is308misc/comparable"
 
 // Hello Passing an Interface from is308ifc as parameter
 func Hello(i is308ifc.I) {
@@ -30,7 +30,7 @@ func main() {
 	//n = 4
 	var i comparable.Comparable
 	//var t comparable.T{2}
-	t := comparable.T{2}
+	t := comparable.T{Value: 2}
 	//t.Value = 2
 	fmt.Printf("%+v\n", t)
 	i = t
